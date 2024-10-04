@@ -1,0 +1,43 @@
+body{
+    font-family: poppins;
+    font-weight: 300;
+    background-color: #302a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 0;
+  
+  }
+  
+  table{
+       border-collapse: collapse;
+       background-color: white;
+       border-radius: 10px;
+       overflow: hidden;
+  
+  }
+  th, td{
+    padding: 15px;
+    text-align: left;
+    border-bottom:  1px solid #ddd;
+  }
+  
+  th{
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  tr:hover{
+    background-color: #F5F5F5;
+    }
+    td:last-child{
+      text-align: center;
+      color: #666;
+    }
+   .ex{
+    font-style:italic;
+    font-weight: 300;
+   }
+  
