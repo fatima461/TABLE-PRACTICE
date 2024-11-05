@@ -1,13 +1,8 @@
-const accountId=67456
-let accountEmail="xyz@gmail.com"
-var accountPass="boom123"
-acountCity="lahore"
-console.log(accountId)
-console.log(accountPass)
-console.table([accountId,accountEmail])
-myAccountName="current"
-personalAccountName="bluewhale"
-personalData="none"
-console.table({myAccountName,personalAccountName,personalData})
-
-
+const timetable = "Time Table"
+let monday = "english"
+let tuesday = "chemistry"
+let wednesday = "physics"
+let thursday = "zoology"
+let friday = "botany"
+console.log(timetable);
+console.table({monday,tuesday,wednesday,thursday,friday})

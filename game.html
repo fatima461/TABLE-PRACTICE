@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME</title>
+</head>
+<body>
+    <h1>Rock Paper Scissor</h1>
+         <button
+         onclick="
+         let a= Math.random()
+         let result = ''
+         let compMove= ''
+         if (a>0 && a <1/3){
+            compMove='Rock'
+         } 
+         if (compMove=='Rock'){
+            result='Tie';
+         } 
+         console.log(result);
+         if (a>1/3 && a<2/3){
+            console.log('Lose')
+         }
+         else if (a>2/3 && a<3/3){
+            console.log('Win')
+         }
+    
+      
+         ">Rock</button>
+    <button
+    onclick="
+     a = Math.random()
+         result = ''
+        compMove= ''
+     if (a>0 && a <1/3){
+            compMove='Paper'
+         } 
+         if (compMove=='Paper'){
+            result='Tie';
+         } 
+         console.log(result);
+         if (a>1/3 && a<2/3){
+            console.log('Lose')
+         }
+         else if (a>2/3 && a<3/3){
+            console.log('Win')
+         }
+         ">Paper</button>
+    <button
+    onclick="
+     a = Math.random()
+         result = ''
+        compMove= ''
+     if (a>0 && a <1/3){
+            compMove='Scissor'
+         } 
+         if (compMove=='Scissor'){
+            result='Tie';
+         } 
+         console.log(result);
+         if (a>1/3 && a<2/3){
+            console.log('Lose')
+         }
+         else if (a>2/3 && a<3/3){
+            console.log('Win')
+         }
+    ">Scissor</button>
+   
+
+       
+    
+
+    
+    
+</body>
+</html>
