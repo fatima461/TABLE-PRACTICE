@@ -9,7 +9,7 @@
     <p>Rock Paper Scissors</p>
     <button
       onclick="playGame('Rock')"
-    >
+      >
       Rock
     </button>
 
@@ -24,9 +24,26 @@
     >
       Scissors
     </button>
+    <button
+    onclick="resetScore()">
+        Reset Score
+    </button>
   </body>
 
   <script>
+    let score=
+    {
+        wins : 0,
+        loses : 0,
+        draw : 0
+    }
+    function resetScore()
+{
+    score.wins=0,
+    score.loses=0,
+    score.draw=0
+};
+
     function playGame(playerMove) {
       const computerMove = pickComputerMove();
       let result = "";
@@ -57,7 +74,7 @@
         }
       } else if (playerMove === "Scissors") {
         if (computerMove === "rock") {
-          result = "lose";
+          result = "tie";
         }
 
         if (computerMove === "paper") {
@@ -68,12 +85,25 @@
           result = "lose";
         }
       }
+      
+      if (result==='win'){
+       score.wins+=1
+    }
+      else if (result==='tie'){
+     score.loses+=1
+     }
+      else { 
+        score.draw+=1
+    }
 
       console.log(computerMove);
+    
       alert(
-        ` You picked ${playerMove}. Computer picked ${computerMove}. Result: ${result}`
+        ` You picked ${playerMove}. Computer picked ${computerMove}. 
+    Result: ${result}
+    Wins: ${score.wins} Loses: ${score.loses} Draws: ${score.draw} `
       );
-
+    
       return computerMove;
     }
 
