@@ -31,7 +31,7 @@
   </body>
 
   <script>
-    let score=
+    let score=JSON.parse(localStorage.getItem('score')) ||
     {
         wins : 0,
         loses : 0,
@@ -95,6 +95,9 @@
       else { 
         score.draw+=1
     }
+     let results=JSON.stringify(score)
+
+     localStorage.setItem('score',results)
 
       console.log(computerMove);
     
