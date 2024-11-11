@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
+    <div class="game-container">
+      <div class="navbar">
     <p>Rock Paper Scissors</p>
+  </div>
+<div class="hero-section">
+  <div class="hero-text">
+  <li>
     <button
       onclick="playGame('Rock')"
       >
       Rock
-    </button>
-
+    </button></li>
+    <li>
     <button
       onclick="playGame('Paper')"
     >
       Paper
-    </button>
-
+    </button></li>
+    <li>
     <button
       onclick="playGame('Scissors')"
     >
       Scissors
-    </button>
+    </button></li>
+    <li>
     <button
-    onclick="resetScore()">
+    onclick="resetScore()
+    clearstorage()">
         Reset Score
     </button>
+  </li>
+</div>
+  </div>
   </body>
 
   <script>
@@ -43,7 +58,10 @@
     score.loses=0,
     score.draw=0
 };
-
+   function clearstorage()
+   {
+   localStorage.removeItem('score')
+   }
     function playGame(playerMove) {
       const computerMove = pickComputerMove();
       let result = "";
