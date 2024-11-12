@@ -1,0 +1,13 @@
+body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+button{
+    font-size: larger;
+    font-weight: 200;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
