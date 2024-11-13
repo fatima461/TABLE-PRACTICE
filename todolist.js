@@ -18,3 +18,4 @@ console.log(mixedBag);
 for (let i=0; i <mixedBag.length; i++){
     console.log(mixedBag[i]);
 }
+mixedBag.push('false','6');
