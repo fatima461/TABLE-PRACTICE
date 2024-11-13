@@ -12,9 +12,13 @@ function displayText(){
     for (let i=0; i < todoList.length; i++){
         content += `<p>${todoList[i]}</p>`;
     }
-    document.querySelector('.js-text').innerHTML=`${content}`
-}
-function deleteToDo()
+    document.querySelector('.js-text').innerHTML= `${content}`
+};
+
+
+
+
+//function deleteToDo()
 {
      inputText=document.querySelector('.js-name-input')
      todoList.splice(inputText.valua)
